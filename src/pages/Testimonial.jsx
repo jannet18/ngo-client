@@ -3,96 +3,153 @@ import { FaStar } from "react-icons/fa";
 
 function Testimonial() {
   return (
-    <div className="p-16 md:p-24 max-w-7xl mx-auto">
-      <div className="flex flex-col items-center justify-center gap-2">
-        <h2 className="text-xl text-[#01715d] font-bold italic">
-          Testimonials
-        </h2>
-        <h4 className="font-bold text-3xl ">
-          What they're saying about The Entrust Initiative
-        </h4>
+    <>
+      <div className="p-16 md:p-24 max-w-7xl mx-auto">
+        <div className="flex flex-col items-center justify-center gap-2">
+          <h2 className="text-3xl text-[#01715d] font-bold italic">
+            Testimonials
+          </h2>
+          <h4 className="font-bold text-4xl ">
+            What they're saying about The Entrust Initiative
+          </h4>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div className="flex flex-col items-center gap-8 justify-center relative mt-8">
+            <img
+              src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
+              alt=""
+              className="object-cover rounded-full w-[250px] h-[250px]"
+            />
+            <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3 relative">
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                amet officia debitis aperiam magni necessitatibus maiores alias
+                temporibus, distinctio nulla ut cupiditate optio recusandae
+                vitae, doloribus praesentium nihil libero reprehenderit.
+              </p>
+              <h3 className="text-xl font-bold capitalize">Kevin Martin</h3>
+              <span className="font-bold text-[#01715d] italic mb-2">
+                Volunteer
+              </span>
+            </div>
+            <div className="absolute bottom-[-26px] left-1/2 transform -translate-x-1/2">
+              <button className="bg-[#fbd459] rounded-full p-5 flex items-center gap-1">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-8 justify-center relative mt-8">
+            <img
+              src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
+              alt=""
+              className="object-cover rounded-full w-[250px] h-[250px]"
+            />
+            <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3 relative">
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                amet officia debitis aperiam magni necessitatibus maiores alias
+                temporibus, distinctio nulla ut cupiditate optio recusandae
+                vitae, doloribus praesentium nihil libero reprehenderit.
+              </p>
+              <h3 className="text-xl font-bold capitalize">Kevin Martin</h3>
+              <span className="font-bold text-[#01715d] italic mb-2">
+                Volunteer
+              </span>
+            </div>
+            <div className="absolute bottom-[-26px] left-1/2 transform -translate-x-1/2">
+              <button className="bg-[#fbd459] rounded-full p-5 flex items-center gap-1">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-8 justify-center relative mt-8">
+            <img
+              src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
+              alt=""
+              className="object-cover rounded-full w-[250px] h-[250px]"
+            />
+            <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3 relative">
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                amet officia debitis aperiam magni necessitatibus maiores alias
+                temporibus, distinctio nulla ut cupiditate optio recusandae
+                vitae, doloribus praesentium nihil libero reprehenderit.
+              </p>
+              <h3 className="text-xl font-bold capitalize">Kevin Martin</h3>
+              <span className="font-bold text-[#01715d] italic mb-2">
+                Volunteer
+              </span>
+            </div>
+            <div className="absolute bottom-[-26px] left-1/2 transform -translate-x-1/2">
+              <button className="bg-[#fbd459] rounded-full p-5 flex items-center gap-1">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-8 justify-center relative mt-8">
+            <img
+              src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
+              alt=""
+              className="object-cover rounded-full w-[250px] h-[250px]"
+            />
+            <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3 relative">
+              <p className="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                amet officia debitis aperiam magni necessitatibus maiores alias
+                temporibus, distinctio nulla ut cupiditate optio recusandae
+                vitae, doloribus praesentium nihil libero reprehenderit.
+              </p>
+              <h3 className="text-xl font-bold capitalize">Kevin Martin</h3>
+              <span className="font-bold text-[#01715d] italic mb-2">
+                Volunteer
+              </span>
+            </div>
+            <div className="absolute bottom-[-26px] left-1/2 transform -translate-x-1/2">
+              <button className="bg-[#fbd459] rounded-full p-5 flex items-center gap-1">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <div className="flex flex-col items-center gap-8 justify-center relative">
+      <div className="relative">
+        <div className="relative">
           <img
-            src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
+            src="https://media.istockphoto.com/id/1434116950/vector/cartoon-people-with-hearts-romantic-persons-funny-guys-girls-and-kids-with-love-and-donate.jpg?s=612x612&w=0&k=20&c=V7a1zMCn1nQrStuQhfIO6Al6tO2dC-S11wK5JjYiDQg="
             alt=""
-            className="object-cover w-[250px] h-[250px] rounded-full"
+            className="w-full h-full object-cover"
           />
-          <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3 relative">
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              amet officia debitis aperiam magni necessitatibus maiores alias
-              temporibus, distinctio nulla ut cupiditate optio recusandae vitae,
-              doloribus praesentium nihil libero reprehenderit.
-            </p>
-            <h3 className="text-xl font-bold capitalize">Kevin Martin</h3>
-            <span className="font-bold text-[#01715d] italic">Volunteer</span>
-          </div>
-          <div>
-            <button className="bg-[#fbd459] rounded-full p-5 flex items-center gap-1 absolute bottom-0.5 right-[25%]">
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-            </button>
-          </div>
+          <div className="absolute inset-0 bg-green-900 bg-opacity-50"></div>
         </div>
-        <div className="flex flex-col items-center gap-8 justify-center relative">
-          <img
-            src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
-            alt=""
-            className="object-cover rounded-full w-[250px] h-[250px]"
-          />
-          <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3">
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              amet officia debitis aperiam magni necessitatibus maiores alias
-              temporibus, distinctio nulla ut cupiditate optio recusandae vitae,
-              doloribus praesentium nihil libero reprehenderit.
-            </p>
-            <h3 className="text-xl font-bold capitalize">Kevin Martin</h3>
-            <span className="font-bold text-[#01715d] italic">Volunteer</span>
-          </div>
-          <div>
-            <button className="bg-[#fbd459] rounded-full p-5 flex items-center gap-1 absolute bottom-0.5 right-[25%]">
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col items-center gap-8 justify-center relative">
-          <img
-            src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
-            alt=""
-            className="object-cover rounded-full w-[250px] h-[250px]"
-          />
-          <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3">
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              amet officia debitis aperiam magni necessitatibus maiores alias
-              temporibus, distinctio nulla ut cupiditate optio recusandae vitae,
-              doloribus praesentium nihil libero reprehenderit.
-            </p>
-            <h3 className="text-xl font-bold capitalize">Kevin Martin</h3>
-            <span className="font-bold text-[#01715d] italic">Volunteer</span>
-          </div>
-          <div>
-            <button className="bg-[#fbd459] rounded-full p-5 flex items-center gap-1 absolute bottom-0.5 right-[25%]">
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-            </button>
-          </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center p-5">
+          <h2 className="font-bold text-[#fbd459] italic text-2xl">
+            Become a Volunteer
+          </h2>
+          <span className="text-4xl font-bold text-white">
+            Join your hand with us for a better life and future
+          </span>
+          <button className="bg-[#fbd459] text-xs font-bold p-5 rounded-full">
+            Discover More
+          </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

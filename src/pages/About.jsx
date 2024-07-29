@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import Testimonial from "./Testimonial";
+import Team from "./Team";
 
 function About() {
   return (
@@ -55,6 +56,7 @@ function About() {
           </div>
         </div>
         <Testimonial />
+        <Team />
       </div>
     </div>
   );
