@@ -75,7 +75,7 @@ function Donate() {
             praesentium, rerum blanditiis!
           </p>
           <div className="bg-[#f9f4e8] p-10 rounded-3xl">
-            <p className="border-b-8 border-[#01715d]"></p>
+            <input type="range" min={100} max={1000} className="w-full" />
             <div className="flex items-center justify-between">
               <span>Raised</span>
               <span>Goal</span>

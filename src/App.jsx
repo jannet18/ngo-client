@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Volunteer from "./pages/Volunteer";
 import Donate from "./pages/Donate";
 import Shop from "./pages/Shop";
+import EnrollementForm from "./forms/EnrollementForm";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/volunteer" element={<Volunteer />} />
         <Route exact path="/donate" element={<Donate />} />
         <Route exact path="/shop" element={<Shop />} />
+        <Route exact path="/enroll" element={<EnrollementForm />} />
       </Routes>
       <Footer />
     </>
