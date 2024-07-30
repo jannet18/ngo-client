@@ -3,7 +3,6 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Blog from "../pages/Blog";
 import FAQ from "../pages/FAQ";
-import Programs from "../pages/Programs";
 import About from "../pages/About";
 
 function Home() {
@@ -13,7 +12,6 @@ function Home() {
       <div>
         <Hero />
         <About />
-        <Programs />
         <FAQ />
         <Blog />
       </div>

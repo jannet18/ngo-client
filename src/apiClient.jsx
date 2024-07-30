@@ -19,3 +19,21 @@ export const registerVolunteer = async (formData) => {
     throw error;
   }
 };
+
+export const registerProgram = async (formData) => {
+  try {
+    const response = await fetch(`${API_BASE_URL}/students`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    if (!response.ok) {
+      throw new Error();
+    }
+    return response.json();
+  } catch (error) {
+    throw error;
+  }
+};

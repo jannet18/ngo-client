@@ -110,19 +110,19 @@ function Header() {
               </svg>
             </button>
             <div className="hidden md:flex space-x-4">
-              <Link to="#" className="hover:text-gray-300">
+              <Link to="/" className="hover:text-gray-300">
                 Home
               </Link>
-              <Link to="#" className="hover:text-gray-300">
+              <Link to="/about" className="hover:text-gray-300">
                 About
               </Link>
-              <Link to="#" className="hover:text-gray-300">
+              <Link to="/donate" className="hover:text-gray-300">
                 Donations
               </Link>
-              <Link to="#" className="hover:text-gray-300">
+              <Link to="/events" className="hover:text-gray-300">
                 Events
               </Link>
-              <Link to="#" className="hover:text-gray-300">
+              <Link to="/blog" className="hover:text-gray-300">
                 News
               </Link>
               <div className="relative">
@@ -149,18 +149,28 @@ function Header() {
                 </button>
                 {dropdownMenu && (
                   <div className="absolute mt-5 w-56 bg-white rounded-md shadow-lg py-1 z-20">
-                    <Link to="#" className="block px-4 py-2 text-gray-800">
-                      Admin Dashboard
+                    <Link
+                      to="/volunteer"
+                      className="block px-4 py-2 text-gray-800"
+                    >
+                      Volunteer
                     </Link>
-                    <Link to="#" className="block px-4 py-2 text-gray-800">
-                      Teacher Dashboard
+                    <Link
+                      to="/enroll"
+                      className="block px-4 py-2 text-gray-800"
+                    >
+                      Enroll
                     </Link>
-                    <Link to="#" className="block px-4 py-2 text-gray-800">
-                      Students
+                    <Link
+                      to="/donate"
+                      className="block px-4 py-2 text-gray-800"
+                    >
+                      Donate
                     </Link>
-                    <Link to="/login" className="block px-4 py-2 text-gray-800">
-                      Sign Out
-                    </Link>
+                    <Link
+                      to="/login"
+                      className="block px-4 py-2 text-gray-800"
+                    ></Link>
                   </div>
                 )}
               </div>
@@ -190,22 +200,22 @@ function Header() {
       {/* Mobile Menu */}
       {showMenu && (
         <div className="bg-gray-100 text-gray-800 md:hidden">
-          <Link to="#" className="block py-2 px-4 text-sm">
+          <Link to="/" className="block py-2 px-4 text-sm">
             Home
           </Link>
-          <Link to="#" className="block py-2 px-4 text-sm">
+          <Link to="/about" className="block py-2 px-4 text-sm">
             About
           </Link>
-          <Link to="#" className="block py-2 px-4 text-sm">
+          <Link to="/donate" className="block py-2 px-4 text-sm">
             Donations
           </Link>
-          <Link to="#" className="block py-2 px-4 text-sm">
+          <Link to="/events" className="block py-2 px-4 text-sm">
             Events
           </Link>
-          <Link to="#" className="block py-2 px-4 text-sm">
+          <Link to="/blogs" className="block py-2 px-4 text-sm">
             News
           </Link>
-          <Link to="#" className="block py-2 px-4 text-sm">
+          <Link to="/contact" className="block py-2 px-4 text-sm">
             Contacts
           </Link>
           <div className="relative px-1">

@@ -2,6 +2,9 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import Testimonial from "./Testimonial";
 import Team from "./Team";
+import { MdOutlinePushPin } from "react-icons/md";
+import { MdOfflinePin } from "react-icons/md";
+import Programs from "./Programs";
 
 function About() {
   return (
@@ -24,39 +27,166 @@ function About() {
           <div className="flex flex-col items-start gap-6">
             <div className="">
               <h2 className="text-lg font-bold text-[#01715d] italic">
-                About The Entrust Initiative
+                The Entrust Initiative
               </h2>
-              <h6 className="font-bold text-2xl">
-                Get to know about our organization
+              <h6 className="font-bold text-2xl capitalize">
+                Equips and empowers Worship Ministry Teams
               </h6>
             </div>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur, tempora deserunt fuga sequi illum eveniet voluptates
-              provident similique hic velit dolor eaque incidunt molestias cum
-              itaque maiores veniam! Expedita, magni.
+            <p className="text-md tracking-wider">
+              Extended Worship is a comprehensive training program designed to
+              equip and empower worship ministry teams within churches to serve
+              with excellence, unity, and spiritual depth.
             </p>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <FaCheckCircle className="text-[#fbd459]" />
-                <span>Proin sed magna vel mi suscipit commodo.</span>
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-row gap-1">
+                <FaCheckCircle className="text-[#fbd459] w-8 h-8" />
+                <p className="text-sm">
+                  The program encompasses a wide range of training initiatives,
+                  rooted in commitment to Biblical principles and creative
+                  expression.
+                </p>
               </div>
-              <div className="flex items-center gap-2">
-                <FaCheckCircle className="text-[#fbd459]" />
-                <span>Proin sed magna vel mi suscipit commodo.</span>
+              <div className="flex flex-row gap-1">
+                <FaCheckCircle className="text-[#fbd459] w-7 h-7" />
+                <p className="text-sm">
+                  Suited for aspiring worship leaders, instrumentalists, sound
+                  engineers, media volunteers, and backup vocalists.
+                </p>
               </div>
-              <div className="flex items-center gap-2">
-                <FaCheckCircle className="text-[#fbd459]" />
-                <span>Proin sed magna vel mi suscipit commodo.</span>
+              <div className="flex flex-row gap-1">
+                <FaCheckCircle className="text-[#fbd459] w-6 h-6" />
+                <p className="text-sm">
+                  Offered through practical instruction, spiritual formation,
+                  and collective worship experiences,
+                </p>
+              </div>
+              <div className="flex flex-row gap-1">
+                <FaCheckCircle className="text-[#fbd459] w-6 h-6" />
+                <p className="text-sm">
+                  Extended Worship seeks to cultivate vibrant and authentic
+                  worship cultures in our churches.
+                </p>
               </div>
             </div>
-            <button className="bg-[#fbd459] text-xs uppercase p-5 border rounded-full font-bold hover:bg-gray-600 hover:text-white">
-              Discover more
-            </button>
+          </div>
+          <div className="space-y-10">
+            <div className="space-y-4">
+              <h4 className="font-bold text-2xl">Vision</h4>
+              <p className="text-md text-gray-700">
+                Our vision is to see worship ministry teams -;
+              </p>
+              <div className="flex flex-col items-start">
+                <div className="flex items-start gap-4">
+                  <FaCheckCircle className="text-[#0a4446] w-6 h-6 hover:text-[#fbd459]" />
+                  <p>
+                    Equipped with necessary skills, knowledge, and spiritual
+                    foundation.
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <FaCheckCircle className="text-[#0a4446] w-6 h-6 hover:text-[#fbd459]" />
+                  <p>
+                    Lead transformative worship experiences that draw believers
+                    <span>into deeper intimacy with God</span>
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <FaCheckCircle className="text-[#0a4446] w-6 h-6 hover:text-[#fbd459]" />
+                  <p>Foster community among congregants.</p>
+                </div>
+              </div>
+              <p className="text-lg font-bold">
+                We envision worship that is characterized by excellence,
+                authenticity, and unity, ultimately glorifying God and edifying
+                His people.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <h4 className="font-bold text-2xl">Mission</h4>
+              <div className="flex items-start">
+                <MdOfflinePin className="w-16 h-16 text-[#fbd459] hover:text-[#0a4446]" />
+                <p className="text-md text-gray-700">
+                  Our mission is to provide comprehensive training and support
+                  to worship ministry teams, encompassing worship leaders,
+                  instrumentalists, sound engineers, media volunteers, and
+                  backup vocalists.
+                </p>
+              </div>
+              <div className="flex items-start">
+                <MdOfflinePin className="w-16 h-16 text-[#fbd459] hover:text-[#0a4446]" />
+                <p className="text-md text-gray-700">
+                  Through practical instruction, spiritual formation, and
+                  collective worship experiences, we aim to empower participants
+                  to serve effectively in their respective roles, leading with
+                  humility, authenticity, and a deep reverence for God.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="space-y-6">
+            <h4 className="text-2xl font-bold">Values</h4>
+            <div className="flex gap-4">
+              <span className="text-xl font-bold hover:text-[#01715d]">
+                Excellence:
+              </span>
+              <p className="text-sm text-start">
+                We strive for excellence in all aspects of worship ministry,
+                honoring God with the highest standards of musical proficiency,
+                technical skill, and creative expression.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-lg font-bold hover:text-[#01715d]">
+                Authenticity:
+              </span>
+              <p className="text-sm text-start">
+                We value authenticity in worship, encouraging worship leaders
+                and team members to lead from a place of genuine relationship
+                with God and humility before Him
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-lg font-bold hover:text-[#01715d]">
+                Unity:
+              </span>
+              <p className="text-sm text-start">
+                We prioritize unity within worship ministry teams and the
+                broader church community, recognizing that our collective
+                worship is most powerful when we are united in purpose and
+                spirit.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-lg font-bold hover:text-[#01715d]">
+                Spiritual Formation:
+              </span>
+              <p className="text-sm text-start">
+                We are committed to fostering spiritual growth and maturity
+                among participants, emphasizing the importance of personal
+                devotion, prayer, and biblical study in worship leadership.
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <span className="text-lg font-bold hover:text-[#01715d]">
+                Creativity:
+              </span>
+              <p className="text-sm text-start">
+                We embrace creativity as a means of expressing worship in
+                diverse and innovative ways, honoring God with our artistic
+                gifts and talents.
+              </p>
+            </div>
           </div>
         </div>
-        <Testimonial />
+        <div className="text-center m-3">
+          <button className="bg-[#fbd459] text-xs uppercase p-5 rounded-full font-bold hover:bg-gray-600 hover:text-white">
+            Discover more
+          </button>
+        </div>
+        <Programs />
         <Team />
+        <Testimonial />
       </div>
     </div>
   );

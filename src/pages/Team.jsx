@@ -30,44 +30,67 @@ function Team() {
   ];
 
   return (
-    <div className="p-8 md:p-20 max-w-7xl mx-auto">
-      <div className="text-center mb-10">
-        <h3 className="text-[#01715d] font-bold text-xl">Our Expert Team</h3>
-        <h5 className="text-3xl font-bold">Meet the Team</h5>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="relative group w-full h-full rounded-3xl overflow-hidden">
-              <img
-                src={member.imgSrc}
-                alt={member.name}
-                className="object-cover w-full h-full rounded-3xl"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="flex space-x-4 bg-[#fbd459] p-1 rounded-t-2xl">
-                  <a href="#" className="text-[#0a4446] p-1">
-                    <FaFacebook size={24} />
-                  </a>
-                  <a href="#" className="text-[#0a4446] p-1">
-                    <FaTwitter size={24} />
-                  </a>
-                  <a href="#" className="text-[#0a4446] p-1">
-                    <FaInstagram size={24} />
-                  </a>
+    <>
+      <div className="p-8 md:p-20 max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h3 className="text-[#01715d] font-bold text-xl">Our Expert Team</h3>
+          <h5 className="text-3xl font-bold">Meet the Team</h5>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="relative group w-full h-full rounded-3xl overflow-hidden">
+                <img
+                  src={member.imgSrc}
+                  alt={member.name}
+                  className="object-cover w-full h-full rounded-3xl"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex space-x-4 bg-[#fbd459] p-1 rounded-t-2xl">
+                    <a href="#" className="text-[#0a4446] p-1">
+                      <FaFacebook size={24} />
+                    </a>
+                    <a href="#" className="text-[#0a4446] p-1">
+                      <FaTwitter size={24} />
+                    </a>
+                    <a href="#" className="text-[#0a4446] p-1">
+                      <FaInstagram size={24} />
+                    </a>
+                  </div>
                 </div>
               </div>
+              <div className="bg-[#202d2b] rounded-b-3xl flex flex-col items-center justify-center h-28 w-48 md:w-40">
+                <h3 className="text-white text-2xl font-bold">{member.name}</h3>
+                <span className="text-[#fbd459] font-bold italic">
+                  {member.role}
+                </span>
+              </div>
             </div>
-            <div className="bg-[#202d2b] rounded-b-3xl flex flex-col items-center justify-center h-28 w-48 md:w-40">
-              <h3 className="text-white text-2xl font-bold">{member.name}</h3>
-              <span className="text-[#fbd459] font-bold italic">
-                {member.role}
-              </span>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+      <div className="relative">
+        <div className="relative">
+          <img
+            src="https://media.istockphoto.com/id/1434116950/vector/cartoon-people-with-hearts-romantic-persons-funny-guys-girls-and-kids-with-love-and-donate.jpg?s=612x612&w=0&k=20&c=V7a1zMCn1nQrStuQhfIO6Al6tO2dC-S11wK5JjYiDQg="
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-green-900 bg-opacity-50"></div>
+        </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center p-5">
+          <h2 className="font-bold text-[#fbd459] italic text-2xl">
+            Become a Volunteer
+          </h2>
+          <span className="text-4xl font-bold text-white">
+            Join your hand with us for a better life and future
+          </span>
+          <button className="bg-[#fbd459] text-xs font-bold p-5 rounded-full">
+            Discover More
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
 

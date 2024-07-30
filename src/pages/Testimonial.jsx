@@ -74,7 +74,6 @@ function Testimonial() {
             <img
               src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?s=612x612&w=0&k=20&c=AOylBL01joI0zphCAFr6YVrsOgp_jd2XtVUychLXYho="
               alt=""
-              className="object-cover rounded-full w-[250px] h-[250px]"
             />
             <div className="border-4 border-[#f9f4e8] rounded-3xl flex flex-col items-center justify-center p-6 gap-3 relative">
               <p className="text-sm">
@@ -126,27 +125,6 @@ function Testimonial() {
               </button>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="relative">
-          <img
-            src="https://media.istockphoto.com/id/1434116950/vector/cartoon-people-with-hearts-romantic-persons-funny-guys-girls-and-kids-with-love-and-donate.jpg?s=612x612&w=0&k=20&c=V7a1zMCn1nQrStuQhfIO6Al6tO2dC-S11wK5JjYiDQg="
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-green-900 bg-opacity-50"></div>
-        </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center p-5">
-          <h2 className="font-bold text-[#fbd459] italic text-2xl">
-            Become a Volunteer
-          </h2>
-          <span className="text-4xl font-bold text-white">
-            Join your hand with us for a better life and future
-          </span>
-          <button className="bg-[#fbd459] text-xs font-bold p-5 rounded-full">
-            Discover More
-          </button>
         </div>
       </div>
     </>
