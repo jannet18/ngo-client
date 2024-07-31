@@ -1,7 +1,18 @@
 import React from "react";
+import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
+import * as apiClient from "../apiClient";
 
 function Programs() {
+  const {
+    data: programs = [],
+    isLoading,
+    error,
+  } = useQuery("programs", apiClient?.fetchPrograms);
+
+  if (isLoading) return <div>Loading</div>;
+  if (error) return <div>{error.message}</div>;
+  console.log(programs);
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col items-center space-y-2">
@@ -13,7 +24,32 @@ function Programs() {
         </h4>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-6">
-        <div className="flex flex-col items-center justify-center gap-10 border rounded-3xl">
+        {programs &&
+          programs.map((program, index) => (
+            <div
+              key={index}
+              id={program?.id}
+              className="flex flex-col items-center justify-center gap-10 border rounded-3xl"
+            >
+              <img
+                src={program?.image_url}
+                alt={program.name}
+                className="object-cover w-full h-[300px] rounded-t-3xl"
+              />
+              <div className="flex flex-col items-center justify-center gap-4 p-4">
+                <h1 className="text-xl font-bold">{program?.name}</h1>
+                <p>{program?.description}</p>
+                <Link
+                  to="/enroll"
+                  className="bg-[#fbd459] px-4 py-2 rounded-3xl text-xs font-bold uppercase hover:bg-[#0a4446] hover:text-white"
+                >
+                  enroll
+                </Link>
+              </div>
+            </div>
+          ))}
+
+        {/* <div className="flex flex-col items-center justify-center gap-10 border rounded-3xl">
           <img
             src="https://media.istockphoto.com/id/172730717/photo/singer-silhouette.jpg?s=612x612&w=0&k=20&c=2rTjofRZ4mBgxSx7XawTp0I5zosiMupWNKlGlR_bCQ0="
             alt=""
@@ -175,7 +211,7 @@ function Programs() {
               Enroll
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

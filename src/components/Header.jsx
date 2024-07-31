@@ -174,7 +174,7 @@ function Header() {
                   </div>
                 )}
               </div>
-              <Link to="#" className="hover:text-gray-300">
+              <Link to="/contact" className="hover:text-gray-300">
                 Contacts
               </Link>
             </div>
@@ -183,9 +183,9 @@ function Header() {
             <button className="hover:text-[#fbd459]">
               <IoSearch className="h-6 w-6" />
             </button>
-            <button className="hover:text-[#fbd459]">
+            <Link to="/shop" className="hover:text-[#fbd459]">
               <IoCartOutline className="h-6 w-6" />
-            </button>
+            </Link>
             <Link
               to="/donate"
               className="flex items-center gap-2 bg-[#fbd459] text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md"

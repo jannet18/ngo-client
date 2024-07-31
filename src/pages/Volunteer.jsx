@@ -78,26 +78,26 @@ function Volunteer() {
         </div>
         <div className="p-10">
           <form
-            className="grid grid-cols-1 gap-6"
+            className="grid grid-cols-1 gap-3"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="fullname">Full Name</label>
               <input
                 type="text"
-                placeholder="Full Name"
                 className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
                 {...register("fullname", { required: true })}
               />
-              {errors.firstname && (
+              {errors.fullname && (
                 <span className="text-xs text-red-500">
                   Full Name is required
                 </span>
               )}
             </div>
-            <div className="flex flex-col md:flex-row gap-6 ">
+            <div className="flex flex-col gap-2 ">
+              <label htmlFor="email">Email</label>
               <input
                 type="text"
-                placeholder="Email"
                 className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
                 {...register("email", {
                   required: true,
@@ -112,9 +112,9 @@ function Volunteer() {
                   Email Address is required
                 </span>
               )}
+              <label htmlFor="contact">Phone Number</label>
               <input
                 type="text"
-                placeholder="Phone Number"
                 className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
                 {...register("contact", {
                   required: true,
@@ -130,43 +130,45 @@ function Volunteer() {
                 </span>
               )}
             </div>
-            <select
-              placeholder="Area of interest"
-              className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
-              {...register("area_of_interest", { required: true })}
-            >
-              <option value="" className="text-gray-600">
-                Select Area of Interest
-              </option>
-              <option value="worship-team" className="text-gray-600">
-                Worship Team
-              </option>
-              <option value="sound-team" className="text-gray-600">
-                Sound Team
-              </option>
-              <option value="hospitality" className="text-gray-600">
-                Hospitality
-              </option>
-              <option value="media" className="text-gray-600">
-                Media
-              </option>
-              <option value="ushering" className="text-gray-600">
-                Ushering
-              </option>
-            </select>
-            {errors.area_of_interest && (
-              <span className="text-xs font-medium text-red-600">*</span>
-            )}
+            <div className="relative flex flex-col gap-3">
+              <label htmlFor="fullname">Area of Interest</label>
+              <select
+                className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600 relative"
+                {...register("area_of_interest", { required: true })}
+              >
+                <option value="" className="text-gray-600">
+                  Option
+                </option>
+                <option value="worship-team" className="text-gray-600">
+                  Worship Team
+                </option>
+                <option value="sound-team" className="text-gray-600">
+                  Sound Team
+                </option>
+                <option value="hospitality" className="text-gray-600">
+                  Hospitality
+                </option>
+                <option value="media" className="text-gray-600">
+                  Media
+                </option>
+                <option value="ushering" className="text-gray-600">
+                  Ushering
+                </option>
+              </select>
+              {errors.area_of_interest && (
+                <span className="text-xs font-medium text-red-600 absolute inset-0 top-2 left-32">
+                  *
+                </span>
+              )}
+            </div>
+            <label htmlFor="church">Church</label>
             <input
               type="text"
-              placeholder="Occupation"
               className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
-              {...register("occupation", { required: true })}
+              {...register("church", { required: true })}
             />
-            {errors.occupation && (
-              <span className="text-xs text-red-500">
-                Occupation is required
-              </span>
+            {errors.church && (
+              <span className="text-xs text-red-500">Church is required</span>
             )}
             <textarea
               rows={10}
@@ -177,6 +179,33 @@ function Volunteer() {
             {errors.message && (
               <span className="text-xs text-red-500">Message is required</span>
             )}
+            <div className="flex flex-row items-center gap-2 ">
+              <input
+                type="checkbox"
+                {...register("accepted_terms", { required: true })}
+              />
+              I accept the
+              <label htmlFor="" className="text-gray-700">
+                <a
+                  href=""
+                  className="text-blue-500 hover:text-blue-800 hover:underline"
+                >
+                  terms
+                </a>{" "}
+                and{" "}
+                <a
+                  href="#"
+                  className="text-blue-500 hover:text-blue-800 hover:underline"
+                >
+                  privacy policy
+                </a>
+              </label>
+              {errors.accepted_terms && (
+                <span className="text-xs text-red-500 flex">
+                  You must accept the terms and conditions
+                </span>
+              )}
+            </div>
             <button
               type="submit"
               className="bg-[#fbd459] p-4 w-fit rounded-3xl uppercase text-xs font-bold hover:bg-gray-700 hover:text-white"

@@ -20,7 +20,7 @@ export const registerVolunteer = async (formData) => {
   }
 };
 
-export const registerProgram = async (formData) => {
+export const registerStudent = async (formData) => {
   try {
     const response = await fetch(`${API_BASE_URL}/students`, {
       method: "POST",
@@ -36,4 +36,22 @@ export const registerProgram = async (formData) => {
   } catch (error) {
     throw error;
   }
+};
+
+export const fetchPrograms = async () => {
+  const response = await fetch(`${API_BASE_URL}/programs`);
+  if (!response.ok) {
+    throw new Error("Fetch programs failed");
+  }
+  return response.json();
+};
+
+export const fetchCategories = async (programId) => {
+  const response = await fetch(
+    `${API_BASE_URL}/programs/${programId}/categories`
+  );
+  if (!response.ok) {
+    throw new Error("Failed to fetch");
+  }
+  return response.json();
 };
