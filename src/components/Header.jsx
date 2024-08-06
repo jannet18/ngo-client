@@ -41,8 +41,8 @@ function Header() {
   return (
     <>
       {/* Top Menu */}
-      <div className="bg-gray-100 py-0.5">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+      <div className="bg-gray-100 p-8">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Link to="/">
               <h2 className="uppercase font-bold text-2xl">The Entrust</h2>

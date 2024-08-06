@@ -30,7 +30,7 @@ function Volunteer() {
     },
   });
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     mutation.mutate(data);
   };
   return (

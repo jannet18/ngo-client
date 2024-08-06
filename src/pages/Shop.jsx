@@ -34,9 +34,9 @@ function Shop() {
                 Ksh. 100 - Ksh. 1000
                 <div className="flex items-center gap-2">
                   <Link className="underline">Reset</Link>
-                  <button className="bg-[#fbd459] rounded-3xl px-3 py-1 uppercase text-xs font-bold">
+                  <Link className="bg-[#fbd459] rounded-3xl px-3 py-1 uppercase text-xs font-bold">
                     Apply
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -44,13 +44,13 @@ function Shop() {
               <h4 className="font-bold mb-2">Categories</h4>
               <ul className="space-y-3">
                 <li className="text-gray-600 hover:bg-[#f9f4e8] p-2 rounded-3xl hover:font-bold">
-                  Category 1
+                  T-shirt
                 </li>
                 <li className="text-gray-600 hover:bg-[#f9f4e8] p-2 rounded-3xl hover:font-bold">
-                  Category 2
+                  Hoodie
                 </li>
                 <li className="text-gray-600 hover:bg-[#f9f4e8] p-2 rounded-3xl hover:font-bold">
-                  Category 3
+                  Mugs
                 </li>
               </ul>
             </div>
@@ -79,12 +79,12 @@ function Shop() {
                 <div className="flex flex-col items-center gap-3 p-4">
                   <h4 className="text-xl font-bold capitalize">T-shirt</h4>
                   <span className="text-gray-500">Ksh. 600.00</span>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
                     Select options
-                  </button>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  </Link>
+                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
                     Add to Cart
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="border rounded-3xl">
@@ -108,12 +108,15 @@ function Shop() {
                 <div className="flex flex-col items-center gap-3 p-4">
                   <h4 className="text-xl font-bold capitalize">T-shirt</h4>
                   <span className="text-gray-500">Ksh. 600.00</span>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
                     Select options
-                  </button>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  </Link>
+                  <Link
+                    to="/cart"
+                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
+                  >
                     Add to Cart
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="border rounded-3xl">
@@ -137,12 +140,15 @@ function Shop() {
                 <div className="flex flex-col items-center gap-3 p-4">
                   <h4 className="text-xl font-bold capitalize">T-shirt</h4>
                   <span className="text-gray-500">Ksh. 600.00</span>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
                     Select options
-                  </button>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  </Link>
+                  <Link
+                    to="/cart"
+                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
+                  >
                     Add to Cart
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="border rounded-3xl">
@@ -166,12 +172,15 @@ function Shop() {
                 <div className="flex flex-col items-center gap-3 p-4">
                   <h4 className="text-xl font-bold capitalize">T-shirt</h4>
                   <span className="text-gray-500">Ksh. 600.00</span>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
                     Select options
-                  </button>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  </Link>
+                  <Link
+                    to="/cart"
+                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
+                  >
                     Add to Cart
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="border rounded-3xl">
@@ -195,12 +204,15 @@ function Shop() {
                 <div className="flex flex-col items-center gap-3 p-4">
                   <h4 className="text-xl font-bold capitalize">T-shirt</h4>
                   <span className="text-gray-500">Ksh. 600.00</span>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
                     Select options
-                  </button>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  </Link>
+                  <Link
+                    to="/cart"
+                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
+                  >
                     Add to Cart
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="border rounded-3xl">
@@ -223,13 +235,54 @@ function Shop() {
                 </div>
                 <div className="flex flex-col items-center gap-3 p-4">
                   <h4 className="text-xl font-bold capitalize">T-shirt</h4>
+
+                  <>
+                    <div className="prod-info grid gap-10">
+                      <div>
+                        <ul className="flex flex-row justify-center items-center">
+                          <li className="mr-4 last:mr-0">
+                            <span className="block p-1 border-2 border-gray-500 rounded-full transition ease-in duration-300">
+                              <a
+                                href="#blue"
+                                className="block w-6 h-6 bg-blue-900 rounded-full"
+                              ></a>
+                            </span>
+                          </li>
+                          <li className="mr-4 last:mr-0">
+                            <span className="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                              <a
+                                href="#yellow"
+                                className="block w-6 h-6 bg-yellow-500 rounded-full"
+                              ></a>
+                            </span>
+                          </li>
+                          <li className="mr-4 last:mr-0">
+                            <span className="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                              <a
+                                href="#red"
+                                className="block w-6 h-6 bg-red-500 rounded-full"
+                              ></a>
+                            </span>
+                          </li>
+                          <li className="mr-4 last:mr-0">
+                            <span className="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                              <a
+                                href="#green"
+                                className="block w-6 h-6 bg-green-500 rounded-full"
+                              ></a>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </>
                   <span className="text-gray-500">Ksh. 600.00</span>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
-                    Select options
-                  </button>
-                  <button className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
+                  <Link
+                    to="/cart"
+                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
+                  >
                     Add to Cart
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -24,7 +24,7 @@ function About() {
               className="absolute bottom-[-10%] left-[20%] object-cover rounded-3xl w-[200px] h-[200px] md:w-[350px] md:h-[350px] z-10"
             />
           </div>
-          <div className="flex flex-col items-start gap-6">
+          <div className="flex flex-col items-start gap-6 border p-6 rounded-3xl">
             <div className="">
               <h2 className="text-lg font-bold text-[#01715d] italic">
                 The Entrust Initiative
@@ -71,7 +71,7 @@ function About() {
             </div>
           </div>
           <div className="space-y-10">
-            <div className="space-y-4">
+            <div className="space-y-4 border p-6 rounded-3xl">
               <h4 className="font-bold text-2xl">Vision</h4>
               <p className="text-md text-gray-700">
                 Our vision is to see worship ministry teams -;
@@ -102,7 +102,7 @@ function About() {
                 His people.
               </p>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 border p-6 rounded-3xl">
               <h4 className="font-bold text-2xl">Mission</h4>
               <div className="flex items-start">
                 <MdOfflinePin className="w-16 h-16 text-[#fbd459] hover:text-[#0a4446]" />
@@ -124,7 +124,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6 border p-6 rounded-3xl">
             <h4 className="text-2xl font-bold">Values</h4>
             <div className="flex gap-4">
               <span className="text-xl font-bold hover:text-[#01715d]">

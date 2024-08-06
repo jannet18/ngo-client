@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import Events from "./components/Events";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import Cart from "./components/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/events" element={<Events />} />
         <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </>
