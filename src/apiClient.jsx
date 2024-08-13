@@ -55,3 +55,21 @@ export const fetchCategories = async (programId) => {
   }
   return response.json();
 };
+
+export const mpesaPayment = async () => {
+  const response = await fetch(`${API_BASE_URL}/stkpush`, {
+    method: "POST",
+    // credentials: "include"
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ phoneNumber, amount }),
+  });
+
+  const data = await response.json();
+  if (data.success) {
+    alert("Payment initiated successfully");
+  } else {
+    alert("Payment failed");
+  }
+};

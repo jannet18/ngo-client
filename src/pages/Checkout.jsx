@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Checkout() {
   return (
@@ -271,7 +272,8 @@ function Checkout() {
               </div>
               <div>
                 <button className="block w-full max-w-xs mx-auto bg-[#fbd459] hover:bg-[#273733] focus:bg-[#273733] text-white rounded-lg px-3 py-2 font-semibold">
-                  <i className="mdi mdi-lock-outline mr-1"></i> PAY NOW
+                  <i className="mdi mdi-lock-outline mr-1"></i>
+                  <Link to="/mpesa">PAY NOW</Link>
                 </button>
               </div>
             </div>
