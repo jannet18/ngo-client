@@ -10,7 +10,7 @@ import {
 } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
-
+import logo from "../assets/entrust.jpeg";
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [dropdownMenu, setDropdownMenu] = useState(false);
@@ -41,48 +41,63 @@ function Header() {
   return (
     <>
       {/* Top Menu */}
-      <div className="bg-gray-100 p-8">
+      <div className="bg-gray-100 px-8 py-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Link to="/">
-              <h2 className="uppercase font-bold text-2xl">The Entrust</h2>
-              <span className="text-lg font-semibold">Initiative</span>
+              <img src={logo} alt="" className="logo" />
             </Link>
             <div className="hidden sm:flex items-center space-x-2">
               <FaHeart className="w-6 h-6 text-[#0a4446] p-1 border rounded-full bg-[#fbd459]" />
-              {/* <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ10v7pnIwz1kRUJqjChjKtSRVGkPc0LuS1Q&s"
-                alt=""
-                className="w-6 h-6 object-cover text-[#0a4446] p-1 border rounded-full bg-[#fbd459]"
-              /> */}
               <span
                 className="hover:text-[#01715d] italic font-bold"
                 onClick={() => navigate("/volunteer")}
               >
                 Become a Volunteer
               </span>
-              <MdOutlinePhoneInTalk className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
-              <span className="hover:text-[#01715d] ">+245722300000</span>
-              <MdOutlineEmail className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
-              <span className="hover:text-[#01715d]">Email</span>
-              <MdOutlineLocationOn className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
-              <span className="hover:text-[#01715d]">Nairobi, Kenya</span>
+              <a href="tel:+" className="flex items-center gap-1">
+                <MdOutlinePhoneInTalk className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
+                <span className="hover:text-[#01715d] ">+245722300000</span>
+              </a>
+              <a
+                href="mailto:janetngei18@gmail.com"
+                className="flex items-center gap-1"
+              >
+                <MdOutlineEmail className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
+                <span className="hover:text-[#01715d]">Email</span>
+              </a>
+              <a href="" className="flex items-center gap-1">
+                <MdOutlineLocationOn className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
+                <span className="hover:text-[#01715d]">Nairobi, Kenya</span>
+              </a>
             </div>
           </div>
           <div className="hidden sm:flex space-x-2">
-            <a href="#">
+            <a href="" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="h-8 w-8 text-gray-700 hover:bg-[#01715d] hover:text-white p-2 border rounded-full bg-[#f9f4e8]" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.facebook.com/entrustinitiative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF className="h-8 w-8 text-gray-700 hover:bg-[#01715d] hover:text-white p-2 border rounded-full bg-[#f9f4e8]" />
             </a>
-            <a href="#">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <FaXTwitter className="h-8 w-8 text-gray-700 hover:bg-[#01715d] hover:text-white p-2 border rounded-full bg-[#f9f4e8]" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.youtube.com/@theentrustinitiative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <CiYoutube className="h-8 w-8 text-gray-700 hover:bg-[#01715d] hover:text-white p-2 border rounded-full bg-[#f9f4e8]" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.tiktok.com/@theentrustinitiative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTiktok className="h-8 w-8 text-gray-700 hover:bg-[#01715d] hover:text-white p-2 border rounded-full bg-[#f9f4e8]" />
             </a>
           </div>

@@ -1,33 +1,63 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { useQuery } from "react-query";
+import * as apiClient from "../apiClient";
+import associateDirector from "../assets/baraka.jpeg";
+import executiveDirector from "../assets/baraka.jpeg";
 
 function Team() {
-  const teamMembers = [
+  const { data: teamMembers = [] } = useQuery("teams", apiClient?.fetchTeam);
+
+  console.log(teamMembers);
+  const images = [
     {
-      name: "Sarah Albert",
-      role: "Volunteer",
-      imgSrc:
-        "https://media.istockphoto.com/id/1485052530/photo/portrait-fashion-and-braids-with-a-black-woman-on-an-orange-background-outdoor-for-style-or.jpg?s=612x612&w=0&k=20&c=fAox0qvGFqgFl1QbUXQ4Y6t_yW5Bl4HqFnvmD6uppHI=",
+      image_url: { executiveDirector },
     },
     {
-      name: "John Doe",
-      role: "Volunteer",
-      imgSrc:
-        "https://media.istockphoto.com/id/1501770003/photo/happy-handsome-young-indian-man-head-shot-front-portrait.jpg?s=612x612&w=0&k=20&c=P2toTbaknymA7vf28IQNa-3xrlUjPXLFqvN2Zra8_nw=",
+      image_url: { associateDirector },
     },
     {
-      name: "Aleesha Eve",
-      role: "Volunteer",
-      imgSrc:
-        "https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.jpg?s=612x612&w=0&k=20&c=8ssXDNTp1XAPan8Bg6mJRwG7EXHshFO5o0v9SIj96nY=",
+      image_url: "../assets/entrust_financial_administrator.jpeg",
     },
     {
-      name: "Jane Smith",
-      role: "Volunteer",
-      imgSrc:
-        "https://media.istockphoto.com/id/1300972574/photo/millennial-male-team-leader-organize-virtual-workshop-with-employees-online.jpg?s=612x612&w=0&k=20&c=uP9rKidKETywVil0dbvg_vAKyv2wjXMwWJDNPHzc_Ug=",
+      image_url: "../assets/administrator.jpeg",
+    },
+    {
+      image_url: "../assets/enroll_cordinator.jpeg",
+    },
+    {
+      image_url: "..assets/media.jpeg",
+    },
+    {
+      image_url: "..assets/entrust_events_director.jpeg",
     },
   ];
+  // const teamMembers = [
+  //   {
+  //     name: "Sarah Albert",
+  //     role: "Volunteer",
+  //     imgSrc:
+  //       "https://media.istockphoto.com/id/1485052530/photo/portrait-fashion-and-braids-with-a-black-woman-on-an-orange-background-outdoor-for-style-or.jpg?s=612x612&w=0&k=20&c=fAox0qvGFqgFl1QbUXQ4Y6t_yW5Bl4HqFnvmD6uppHI=",
+  //   },
+  //   {
+  //     name: "John Doe",
+  //     role: "Volunteer",
+  //     imgSrc:
+  //       "https://media.istockphoto.com/id/1501770003/photo/happy-handsome-young-indian-man-head-shot-front-portrait.jpg?s=612x612&w=0&k=20&c=P2toTbaknymA7vf28IQNa-3xrlUjPXLFqvN2Zra8_nw=",
+  //   },
+  //   {
+  //     name: "Aleesha Eve",
+  //     role: "Volunteer",
+  //     imgSrc:
+  //       "https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.jpg?s=612x612&w=0&k=20&c=8ssXDNTp1XAPan8Bg6mJRwG7EXHshFO5o0v9SIj96nY=",
+  //   },
+  //   {
+  //     name: "Jane Smith",
+  //     role: "Volunteer",
+  //     imgSrc:
+  //       "https://media.istockphoto.com/id/1300972574/photo/millennial-male-team-leader-organize-virtual-workshop-with-employees-online.jpg?s=612x612&w=0&k=20&c=uP9rKidKETywVil0dbvg_vAKyv2wjXMwWJDNPHzc_Ug=",
+  //   },
+  // ];
 
   return (
     <>
@@ -41,8 +71,11 @@ function Team() {
             <div key={index} className="flex flex-col items-center">
               <div className="relative group w-full h-full rounded-3xl overflow-hidden">
                 <img
-                  src={member.imgSrc}
-                  alt={member.name}
+                  src={
+                    // images[index]?.image_url ||
+                    member && member?.image_url
+                  }
+                  alt={member.fullname}
                   className="object-cover w-full h-full rounded-3xl"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -60,9 +93,11 @@ function Team() {
                 </div>
               </div>
               <div className="bg-[#202d2b] rounded-b-3xl flex flex-col items-center justify-center h-28 w-48 md:w-40">
-                <h3 className="text-white text-2xl font-bold">{member.name}</h3>
+                <h3 className="text-white text-2xl font-bold">
+                  {member.fullname}
+                </h3>
                 <span className="text-[#fbd459] font-bold italic">
-                  {member.role}
+                  {member.title}
                 </span>
               </div>
             </div>

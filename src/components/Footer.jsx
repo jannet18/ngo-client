@@ -60,16 +60,28 @@ function Footer() {
             <a href="#">
               <FaInstagram className="h-8 w-8 hover:text-[#01715d] hover:bg-white text-white p-2 border rounded-full bg-[#202d2b]" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.facebook.com/entrustinitiative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF className="h-8 w-8 hover:text-[#01715d] hover:bg-white text-white p-2 border rounded-full bg-[#202d2b]" />
             </a>
             <a href="#">
               <FaXTwitter className="h-8 w-8 hover:text-[#01715d] hover:bg-white text-white p-2 border rounded-full bg-[#202d2b]" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.youtube.com/@theentrustinitiative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <CiYoutube className="h-8 w-8 hover:text-[#01715d] hover:bg-white text-white p-2 border rounded-full bg-[#202d2b]" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.tiktok.com/@theentrustinitiative"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTiktok className="h-8 w-8 hover:text-[#01715d] hover:bg-white text-white p-2 border rounded-full bg-[#202d2b]" />
             </a>
           </div>

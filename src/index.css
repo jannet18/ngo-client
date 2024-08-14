@@ -45,3 +45,11 @@
   background: #10b981; /* Green color for thumb */
   border: 1px solid #10b981;
 }
+.logo {
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: object-cover;
+  align-text: center;
+}

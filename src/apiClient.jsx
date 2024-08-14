@@ -56,7 +56,15 @@ export const fetchCategories = async (programId) => {
   return response.json();
 };
 
-export const mpesaPayment = async () => {
+export const fetchTeam = async () => {
+  const response = await fetch(`${API_BASE_URL}/teams`);
+  if (!response.ok) {
+    throw new Error("Fetch team failed");
+  }
+  return response.json();
+};
+
+export const mpesaPayment = async (phoneNumber, amount) => {
   const response = await fetch(`${API_BASE_URL}/stkpush`, {
     method: "POST",
     // credentials: "include"

@@ -12,7 +12,7 @@ function Programs() {
 
   if (isLoading) return <div>Loading</div>;
   if (error) return <div>{error.message}</div>;
-  console.log(programs);
+  // console.log(programs);
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col items-center space-y-2">
