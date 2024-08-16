@@ -6,9 +6,9 @@ import Hero from "../components/Hero";
 function Donate() {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       <div className="flex items-center justify-center m-10">
-        <h1 className="text-[#01715d] text-2xl font-bold">Support Now</h1>
+        <h1 className="text-[#01715d] text-3xl font-bold">Support Now</h1>
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 p-4 gap-6">
         <div className="">
@@ -54,7 +54,7 @@ function Donate() {
             <p className="font-bold text-xl">
               Total Donation: <span className="text-gray-600"> $250</span>
             </p>
-            <button className="bg-[#fbd459] w-fit text-xs uppercase p-4 font-bold rounded-3xl">
+            <button className="bg-[#fbd459] text-[#01715d] w-fit text-xs uppercase p-4 font-bold rounded-3xl">
               Donate Now
             </button>
           </form>

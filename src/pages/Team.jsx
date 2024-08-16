@@ -8,31 +8,7 @@ import executiveDirector from "../assets/baraka.jpeg";
 function Team() {
   const { data: teamMembers = [] } = useQuery("teams", apiClient?.fetchTeam);
 
-  console.log(teamMembers);
-  const images = [
-    {
-      image_url: { executiveDirector },
-    },
-    {
-      image_url: { associateDirector },
-    },
-    {
-      image_url: "../assets/entrust_financial_administrator.jpeg",
-    },
-    {
-      image_url: "../assets/administrator.jpeg",
-    },
-    {
-      image_url: "../assets/enroll_cordinator.jpeg",
-    },
-    {
-      image_url: "..assets/media.jpeg",
-    },
-    {
-      image_url: "..assets/entrust_events_director.jpeg",
-    },
-  ];
-  // const teamMembers = [
+  // console.log(teamMembers);
   //   {
   //     name: "Sarah Albert",
   //     role: "Volunteer",
@@ -66,15 +42,12 @@ function Team() {
           <h3 className="text-[#01715d] font-bold text-xl">Our Expert Team</h3>
           <h5 className="text-3xl font-bold">Meet the Team</h5>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="relative group w-full h-full rounded-3xl overflow-hidden">
                 <img
-                  src={
-                    // images[index]?.image_url ||
-                    member && member?.image_url
-                  }
+                  src={member && member?.image}
                   alt={member.fullname}
                   className="object-cover w-full h-full rounded-3xl"
                 />
@@ -92,7 +65,7 @@ function Team() {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#202d2b] rounded-b-3xl flex flex-col items-center justify-center h-28 w-48 md:w-40">
+              <div className="bg-[#202d2b] rounded-b-3xl flex flex-col items-center justify-center w-fit h-20 px-4">
                 <h3 className="text-white text-2xl font-bold">
                   {member.fullname}
                 </h3>

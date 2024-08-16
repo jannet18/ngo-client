@@ -180,13 +180,13 @@ function About() {
           </div>
         </div>
         <div className="text-center m-3">
-          <button className="bg-[#fbd459] text-xs uppercase p-5 rounded-full font-bold hover:bg-gray-600 hover:text-white">
+          <button className="bg-[#fbd459] text-[#01715d] text-xs uppercase p-5 rounded-full font-bold hover:bg-gray-600 hover:text-white">
             Discover more
           </button>
         </div>
         <Programs />
         <Team />
-        <Testimonial />
+        {/* <Testimonial /> */}
       </div>
     </div>
   );

@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 function Checkout() {
   return (
-    <div className="min-w-screen min-h-screen bg-gray-50 py-5">
+    <>
+      {/* <div className="min-w-screen min-h-screen bg-gray-50 py-5"> */}
       <div className="px-5">
-        {/* <div className="mb-2">
+        <div className="mb-2">
           <a
             href="#"
             className="focus:outline-none hover:underline text-gray-500 text-sm"
@@ -13,11 +14,11 @@ function Checkout() {
             <i className="mdi mdi-arrow-left text-gray-400"></i>Back
           </a>
         </div>
-        <div className="mb-2">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-600">
+        <div className="mb-2 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-600 ">
             Checkout.
           </h1>
-        </div> */}
+        </div>
         {/* <div className="mb-5 text-gray-400">
           <a
             href="#"
@@ -65,7 +66,7 @@ function Checkout() {
               </div> */}
               <div className="mb-6 pb-6 border-b border-gray-200">
                 <div className="-mx-2 flex items-end justify-end">
-                  <div className="flex-grow px-2 lg:max-w-xs">
+                  {/* <div className="flex-grow px-2 lg:max-w-xs">
                     <label className="text-gray-600 font-semibold text-sm mb-2 ml-1">
                       Discount code
                     </label>
@@ -76,12 +77,12 @@ function Checkout() {
                         type="text"
                       />
                     </div>
-                  </div>
-                  <div className="px-2">
+                  </div> */}
+                  {/* <div className="px-2">
                     <button className="block w-full max-w-xs mx-auto border border-transparent bg-gray-400 hover:bg-gray-500 focus:bg-gray-500 text-white rounded-md px-5 py-2 font-semibold">
                       APPLY
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="mb-6 pb-6 border-b border-gray-200 text-gray-800">
@@ -280,7 +281,8 @@ function Checkout() {
           </div>
         </div>
       </div>
-    </div>
+      {/* </div> */}
+    </>
   );
 }
 

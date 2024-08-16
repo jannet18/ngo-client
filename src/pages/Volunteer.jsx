@@ -34,13 +34,13 @@ function Volunteer() {
     mutation.mutate(data);
   };
   return (
-    <div className="m-14">
-      <Hero />
-      <div className="flex flex-col items-center justify-center ">
-        <h3 className="italic text-[#01715d] font-bold text-xl">
-          Register with us
+    <div className="m-10 p-10">
+      {/* <Hero /> */}
+      <div className="flex flex-col items-center justify-center">
+        <h3 className="italic text-[#01715d] font-bold text-4xl">
+          Volunteer with us
         </h3>
-        <span className="font-bold text-2xl mb-20">
+        <span className="font-bold text-3xl mb-20">
           Join our community to become a volunteer
         </span>
       </div>
@@ -208,7 +208,7 @@ function Volunteer() {
             </div>
             <button
               type="submit"
-              className="bg-[#fbd459] p-4 w-fit rounded-3xl uppercase text-xs font-bold hover:bg-gray-700 hover:text-white"
+              className="bg-[#fbd459]  text-[#01715d] p-4 w-fit rounded-3xl uppercase text-xs font-bold hover:bg-[#f9f4e8]"
             >
               Volunteer
             </button>

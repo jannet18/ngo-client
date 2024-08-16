@@ -6,7 +6,7 @@ import { FaComments } from "react-icons/fa6";
 
 function Blog() {
   return (
-    <div className="max-w-7xl mx-auto space-y-20 m-20">
+    <div className="max-w-7xl mx-auto space-y-20 m-20 p-10">
       <div className="flex flex-col items-center justify-center">
         <h3 className="italic capitalize text-[#01715d] font-bold text-xl">
           Blog & Articles
