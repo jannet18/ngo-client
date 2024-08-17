@@ -82,7 +82,7 @@ function Volunteer() {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex flex-col gap-2">
-              <label htmlFor="fullname">Full Name</label>
+              <label htmlhtmlFor="fullname">Full Name</label>
               <input
                 type="text"
                 className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
@@ -95,7 +95,7 @@ function Volunteer() {
               )}
             </div>
             <div className="flex flex-col gap-2 ">
-              <label htmlFor="email">Email</label>
+              <label htmlhtmlFor="email">Email</label>
               <input
                 type="text"
                 className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
@@ -112,7 +112,7 @@ function Volunteer() {
                   Email Address is required
                 </span>
               )}
-              <label htmlFor="contact">Phone Number</label>
+              <label htmlhtmlFor="contact">Phone Number</label>
               <input
                 type="text"
                 className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
@@ -131,7 +131,7 @@ function Volunteer() {
               )}
             </div>
             <div className="relative flex flex-col gap-3">
-              <label htmlFor="fullname">Area of Interest</label>
+              <label htmlhtmlFor="fullname">Area of Interest</label>
               <select
                 className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600 relative"
                 {...register("area_of_interest", { required: true })}
@@ -161,7 +161,7 @@ function Volunteer() {
                 </span>
               )}
             </div>
-            <label htmlFor="church">Church</label>
+            <label htmlhtmlFor="church">Church</label>
             <input
               type="text"
               className="bg-[#f9f4e8] p-2 rounded-xl outline-none cursor-pointer text-gray-600"
@@ -185,7 +185,7 @@ function Volunteer() {
                 {...register("accepted_terms", { required: true })}
               />
               I accept the
-              <label htmlFor="" className="text-gray-700">
+              <label htmlhtmlFor="" className="text-gray-700">
                 <a
                   href=""
                   className="text-blue-500 hover:text-blue-800 hover:underline"

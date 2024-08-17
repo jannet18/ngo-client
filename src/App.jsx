@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 import Cart from "./components/Cart";
 import Checkout from "./pages/Checkout";
 import MpesaPaymentForm from "./forms/MpesaPaymentForm";
+import Dashboard from "./dashboard/Dashboard";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/checkout" element={<Checkout />} />
         <Route exact path="/checkout" element={<Checkout />} />
         <Route exact path="/mpesa" element={<MpesaPaymentForm />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />
     </>

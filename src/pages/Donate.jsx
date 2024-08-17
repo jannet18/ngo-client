@@ -32,20 +32,20 @@ function Donate() {
           </div>
           <form className="grid grid-cols-1 gap-3">
             <div className="flex flex-col gap-3">
-              <label htmlFor="First Name">First Name</label>
+              <label htmlhtmlFor="First Name">First Name</label>
               <input
                 type="text"
                 placeholder="First Name"
                 className="outline-none bg-[#f9f4e8] p-2.5 rounded-2xl"
               />
-              <label htmlFor="Last Name">Last Name</label>
+              <label htmlhtmlFor="Last Name">Last Name</label>
               <input
                 type="text"
                 placeholder="Last Name"
                 className="outline-none bg-[#f9f4e8] p-2.5 rounded-2xl"
               />
             </div>
-            <label htmlFor="Email">Email</label>
+            <label htmlhtmlFor="Email">Email</label>
             <input
               type="text"
               placeholder="Email"

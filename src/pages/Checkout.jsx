@@ -142,7 +142,7 @@ function Checkout() {
                 <div className="w-full p-3 border-b border-gray-200">
                   <div className="mb-5">
                     <label
-                      for="type1"
+                      htmlFor="type1"
                       className="flex items-center cursor-pointer"
                     >
                       <input
@@ -236,7 +236,7 @@ function Checkout() {
                 </div>
                 <div className="w-full p-3">
                   <label
-                    for="type2"
+                    htmlFor="type2"
                     className="flex items-center cursor-pointer"
                   >
                     <input
@@ -254,7 +254,7 @@ function Checkout() {
                 </div>
                 <div className="w-full p-3">
                   <label
-                    for="type2"
+                    htmlFor="type2"
                     className="flex items-center cursor-pointer"
                   >
                     <input

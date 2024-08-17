@@ -52,7 +52,7 @@ function EnrollementForm() {
           className="flex flex-col items-start justify-center p-10 gap-6"
         >
           <div className="flex flex-col gap-2 w-full">
-            <label htmlFor="fullname">Full Name</label>
+            <label htmlhtmlFor="fullname">Full Name</label>
             <input
               type="text"
               className="border p-1 rounded-md outline-none"
@@ -67,7 +67,7 @@ function EnrollementForm() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex flex-row gap-10">
               <div className="flex flex-col gap-2 w-full">
-                <label htmlFor="gender">Gender</label>
+                <label htmlhtmlFor="gender">Gender</label>
                 <select
                   name="gender"
                   className="border p-1 rounded-md outline-none"
@@ -85,7 +85,7 @@ function EnrollementForm() {
                 )}
               </div>
               <div className="flex flex-col gap-2 w-full">
-                <label htmlFor="date">Date</label>
+                <label htmlhtmlFor="date">Date</label>
                 <input
                   className="border p-1 rounded-md outline-none"
                   defaultValue={new Date()
@@ -102,7 +102,7 @@ function EnrollementForm() {
               </div>
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <label htmlFor="phone-number">Phone Number</label>
+              <label htmlhtmlFor="phone-number">Phone Number</label>
               <input
                 type="text"
                 className="border p-1 rounded-md outline-none"
@@ -123,7 +123,7 @@ function EnrollementForm() {
           </div>
           <div className="flex md:flex-row gap-10">
             <div className="w-full flex flex-col gap-2">
-              <label htmlFor="Church">Church</label>
+              <label htmlhtmlFor="Church">Church</label>
               <input
                 type="text"
                 className="border p-1 rounded-md outline-none"
@@ -136,7 +136,7 @@ function EnrollementForm() {
               )}
             </div>
             <div className="w-full flex flex-col gap-2">
-              <label htmlFor="Program">Program</label>
+              <label htmlhtmlFor="Program">Program</label>
               <select
                 className="border w-full p-1 rounded-md outline-none"
                 {...register("program", { required: true })}
@@ -156,7 +156,7 @@ function EnrollementForm() {
             </div>
             {categories.length > 0 && (
               <div className="w-full flex flex-col gap-2">
-                <label htmlFor="Category">Category</label>
+                <label htmlhtmlFor="Category">Category</label>
                 <select
                   className="border w-full p-1 rounded-md outline-none"
                   {...register("category", { required: true })}
@@ -178,7 +178,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="email">Email</label>
+            <label htmlhtmlFor="email">Email</label>
             <input
               type="text"
               className="border p-1 rounded-md outline-none"
@@ -197,7 +197,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="">
+            <label htmlhtmlFor="">
               Describe your role or responsibility in your Church
             </label>
             <textarea
@@ -212,7 +212,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="">
+            <label htmlhtmlFor="">
               Give a brief description of how you came to faith
             </label>
             <textarea
@@ -227,7 +227,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="">
+            <label htmlhtmlFor="">
               What is the motivation behind your service in Church
             </label>
             <textarea
@@ -242,7 +242,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="">
+            <label htmlhtmlFor="">
               What are some challenges that you have faced while serving ?
             </label>
             <textarea
@@ -257,7 +257,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="">
+            <label htmlhtmlFor="">
               Are you able to commit for a month for the Entrust Training
             </label>
             <select
@@ -274,7 +274,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="">
+            <label htmlhtmlFor="">
               List any other commitments that might affect your participation
             </label>
             <textarea
@@ -289,7 +289,7 @@ function EnrollementForm() {
             )}
           </div>
           <div className="w-full flex flex-col gap-2">
-            <label htmlFor="">
+            <label htmlhtmlFor="">
               What do you hope to achieve or learn through the training ?
             </label>
             <textarea
@@ -309,7 +309,7 @@ function EnrollementForm() {
               {...register("accepted_terms", { required: true })}
             />
             I accept the
-            <label htmlFor="" className="text-gray-700">
+            <label htmlhtmlFor="" className="text-gray-700">
               <a
                 href=""
                 className="text-blue-500 hover:text-blue-800 hover:underline"
