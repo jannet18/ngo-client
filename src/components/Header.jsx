@@ -336,13 +336,13 @@ function Header() {
               <img src={logo} alt="Entrust Logo" className="h-12 w-12" />
             </Link>
             <div className="hidden sm:flex items-center space-x-4">
-              <button
+              <Link
+                to="https://airtable.com/appL0AY242tmDtUOP/pagIrvSEPt4LqpDkS/form"
                 className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#01715d] font-medium"
-                onClick={() => navigate("/volunteer")}
               >
                 <FaHeart className="w-4 h-4 text-[#fbd459]" />
                 Become a Volunteer
-              </button>
+              </Link>
               <a
                 href="tel:+245722300000"
                 className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#01715d]"
@@ -476,13 +476,13 @@ function Header() {
                 {dropdownMenu && (
                   <div className="absolute mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-20">
                     <Link
-                      to="/volunteer"
+                      to="https://airtable.com/appL0AY242tmDtUOP/pagIrvSEPt4LqpDkS/form"
                       className="block px-4 py-2 text-gray-800"
                     >
                       Volunteer
                     </Link>
                     <Link
-                      to="/enroll"
+                      to="https://airtable.com/appL0AY242tmDtUOP/pagXAnInrMJT7siLL/form"
                       className="block px-4 py-2 text-gray-800"
                     >
                       Enroll
@@ -561,14 +561,14 @@ function Header() {
               News
             </Link>
             <Link
-              to="/volunteer"
+              to="https://airtable.com/appL0AY242tmDtUOP/pagIrvSEPt4LqpDkS/form"
               className="block py-2 px-3 rounded-md hover:bg-gray-200"
               onClick={toggleMenu}
             >
               Volunteer
             </Link>
             <Link
-              to="/enroll"
+              to="https://airtable.com/appL0AY242tmDtUOP/pagXAnInrMJT7siLL/form"
               className="block py-2 px-3 rounded-md hover:bg-gray-200"
               onClick={toggleMenu}
             >

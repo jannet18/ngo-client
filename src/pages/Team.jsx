@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 import * as apiClient from "../apiClient";
 import associateDirector from "../assets/baraka.jpeg";
 import executiveDirector from "../assets/baraka.jpeg";
+import { Link } from "react-router-dom";
 
 function Team() {
   const { data: teamMembers = [] } = useQuery("teams", apiClient?.fetchTeam);
@@ -93,9 +94,12 @@ function Team() {
           <span className="text-4xl font-bold text-white">
             Join your hand with us for a better life and future
           </span>
-          <button className="bg-[#fbd459] text-xs font-bold p-5 rounded-full">
+          <Link
+            to="/volunteer"
+            className="bg-[#fbd459] text-xs font-bold p-5 rounded-full"
+          >
             Discover More
-          </button>
+          </Link>
         </div>
       </div>
     </>

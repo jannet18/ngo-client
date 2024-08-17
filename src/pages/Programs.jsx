@@ -40,7 +40,7 @@ function Programs() {
                 <h1 className="text-xl font-bold">{program?.name}</h1>
                 <p>{program?.description}</p>
                 <Link
-                  to="/enroll"
+                  to="https://airtable.com/appL0AY242tmDtUOP/pagXAnInrMJT7siLL/form"
                   className="bg-[#fbd459] text-[#01715d] px-4 py-2 rounded-3xl text-xs font-bold uppercase hover:bg-[#0a4446] hover:text-white"
                 >
                   enroll
