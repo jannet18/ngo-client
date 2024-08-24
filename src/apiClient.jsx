@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  import.meta.env.VITE_APP_BASE_URL || "http://127.0.0.1:3000";
+  import.meta.env.VITE_APP_BASE_URL || "https://entrust-backend.onrender.com";
 
 export const registerVolunteer = async (formData) => {
   try {
@@ -80,4 +80,19 @@ export const mpesaPayment = async (phoneNumber, amount) => {
   } else {
     alert("Payment failed");
   }
+};
+
+export const createProducts = async () => {
+  const response = await fetch(`${API_BASE_URL}/products`, {
+    method: "POST",
+    // credentials: 'include'
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(),
+  });
+  if (!response.ok) {
+    throw new Error("Failed to create product");
+  }
+  return response.json();
 };

@@ -5,13 +5,17 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import AppContext from "./contexts/AppContext.jsx";
+import { Windmill } from "@windmill/react-ui";
+
 const queryClient = new QueryClient();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <React.StrictMode>
       <QueryClientProvider client={queryClient}>
         <AppContext>
-          <App />
+          <Windmill>
+            <App />
+          </Windmill>
         </AppContext>
       </QueryClientProvider>
     </React.StrictMode>

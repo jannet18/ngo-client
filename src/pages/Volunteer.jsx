@@ -227,7 +227,7 @@ import { RiBloggerLine } from "react-icons/ri";
 
 function Volunteer() {
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="mx-auto max-w-7xl m-20">
       <div className="flex items-center flex-col space-y-6">
         <h1 className="text-3xl font-bold">
           Volunteer at The Entrust Intiative
