@@ -10,36 +10,34 @@ function Footer() {
   return (
     <div className="bg-[#273733] text-[#98a6a4] ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 p-6">
-        <div className="flex flex-col gap-2 items-start ">
+        <div className="flex flex-col gap-3 items-start ">
           <div>
             <h2 className="text-2xl font-bold text-white">The Entrust</h2>
             <span className="yexy-lg font-semibold">Initiative</span>
           </div>
           <p className="text-sm">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            iure perspiciatis laborum iste officiis? Ducimus temporibus
-            molestiae reprehenderit quisquam quod aspernatur inventore. Placeat
-            officia architecto quaerat dolores optio sapiente error?
+            Committed to equipping individuals with the skills and knowledge
+            they need to lead and serve effectively.
           </p>
-          <button className="flex items-center gap-2 bg-[#fbd459] px-5 py-3 rounded-full text-[#0a4446] hover:bg-white">
+          <button className="flex items-center gap-2 bg-[#fbd459] px-5 py-3 rounded-full text-[#0a4446] hover:bg-white mt-2">
             <FaHeart /> Support Now
           </button>
         </div>
-        <div className="flex flex-col items-start gap-2">
+        {/* <div className="flex flex-col items-start gap-2">
           <h3 className="text-2xl font-bold text-white">Links</h3>
           <Link>About Us</Link>
           <Link>Contact</Link>
           <Link>Latest News</Link>
           <Link>Recent Events</Link>
           <Link>Donations</Link>
-        </div>
+        </div> */}
         <div className="flex flex-col items-start gap-2">
           <h3 className="text-2xl font-bold text-white">Links</h3>
-          <Link>About Us</Link>
-          <Link>Contact</Link>
-          <Link>Latest News</Link>
-          <Link>Recent Events</Link>
-          <Link>Donations</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/blog">Latest News</Link>
+          <Link to="/events">Recent Events</Link>
+          <Link to="/donations">Donations</Link>
         </div>
         <div className="flex flex-col items-start gap-3">
           <h3 className="text-2xl font-bold text-white">Contact</h3>
@@ -47,14 +45,17 @@ function Footer() {
           <div className="flex items-center gap-2">
             <MdOutlinePhoneInTalk className="w-6 h-6 text-[#fbd459]" />
             <span className="hover:text-[#fbd459] text-white text-sm">
-              +245722300000
+              +245791432966 / +25448149943
             </span>
           </div>
           <div className="flex items-center gap-2">
             <MdOutlineEmail className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
-            <span className="hover:text-[#fbd459] text-white text-sm">
-              Email@email.com
-            </span>
+            <a
+              href="mailto:theentrustinitiative@gmail.com"
+              className="hover:text-[#fbd459] text-white text-sm"
+            >
+              theentrustinitiative@gmail.com
+            </a>
           </div>
           <div className="flex space-x-2 mt-3">
             <a href="#">

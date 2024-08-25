@@ -217,7 +217,7 @@ function About() {
             className="absolute bottom-[-10%] left-[20%] object-cover rounded-3xl w-[200px] h-[200px] md:w-[350px] md:h-[350px] z-10"
           />
         </div>
-        <div className="flex flex-col gap-6 p-6 border rounded-3xl">
+        <div className="flex flex-col gap-6 p-6 border rounded-3xl h-fit">
           <div>
             <h2 className="text-lg font-bold text-[#01715d] italic">
               The Entrust Initiative
@@ -231,7 +231,7 @@ function About() {
             equip and empower worship ministry teams within churches to serve
             with excellence, unity, and spiritual depth.
           </p>
-          <div className="flex flex-col gap-3">
+          {/* <div className="flex flex-col gap-3">
             {[
               "The program encompasses a wide range of training initiatives, rooted in commitment to Biblical principles and creative expression.",
               "Suited for aspiring worship leaders, instrumentalists, sound engineers, media volunteers, and backup vocalists.",
@@ -243,13 +243,13 @@ function About() {
                 <p className="text-sm">{text}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-10">
         <VisionSection />
         <MissionSection />
-        <ValuesSection />
+        {/* <ValuesSection /> */}
       </div>
       <div className="text-center mt-10">
         <button className="bg-[#fbd459] text-[#01715d] text-xs uppercase p-5 rounded-full font-bold hover:bg-gray-600 hover:text-white">
@@ -264,9 +264,9 @@ function About() {
 }
 
 const VisionSection = () => (
-  <div className="space-y-4 p-6 border rounded-3xl">
+  <div className="space-y-4 p-6 border rounded-3xl h-fit">
     <h4 className="font-bold text-2xl">Vision</h4>
-    <p className="text-md text-gray-700">
+    {/* <p className="text-md text-gray-700">
       Our vision is to see worship ministry teams -;
     </p>
     <div className="flex flex-col gap-4">
@@ -280,7 +280,7 @@ const VisionSection = () => (
           <p>{text}</p>
         </div>
       ))}
-    </div>
+    </div> */}
     <p className="text-lg font-bold">
       We envision worship that is characterized by excellence, authenticity, and
       unity, ultimately glorifying God and edifying His people.
@@ -303,37 +303,37 @@ const MissionSection = () => (
   </div>
 );
 
-const ValuesSection = () => (
-  <div className="space-y-6 p-6 border rounded-3xl">
-    <h4 className="text-2xl font-bold">Values</h4>
-    {[
-      {
-        title: "Excellence:",
-        text: "We strive for excellence in all aspects of worship ministry, honoring God with the highest standards of musical proficiency, technical skill, and creative expression.",
-      },
-      {
-        title: "Authenticity:",
-        text: "We value authenticity in worship, encouraging worship leaders and team members to lead from a place of genuine relationship with God and humility before Him.",
-      },
-      {
-        title: "Unity:",
-        text: "We prioritize unity within worship ministry teams and the broader church community, recognizing that our collective worship is most powerful when we are united in purpose and spirit.",
-      },
-      {
-        title: "Spiritual Formation:",
-        text: "We are committed to fostering spiritual growth and maturity among participants, emphasizing the importance of personal devotion, prayer, and biblical study in worship leadership.",
-      },
-      {
-        title: "Creativity:",
-        text: "We embrace creativity as a means of expressing worship in diverse and innovative ways, honoring God with our artistic gifts and talents.",
-      },
-    ].map(({ title, text }, index) => (
-      <div key={index} className="flex gap-4">
-        <span className="text-lg font-bold hover:text-[#01715d]">{title}</span>
-        <p className="text-sm">{text}</p>
-      </div>
-    ))}
-  </div>
-);
+// const ValuesSection = () => (
+//   <div className="space-y-6 p-6 border rounded-3xl">
+//     <h4 className="text-2xl font-bold">Values</h4>
+//     {[
+//       {
+//         title: "Excellence:",
+//         text: "We strive for excellence in all aspects of worship ministry, honoring God with the highest standards of musical proficiency, technical skill, and creative expression.",
+//       },
+//       {
+//         title: "Authenticity:",
+//         text: "We value authenticity in worship, encouraging worship leaders and team members to lead from a place of genuine relationship with God and humility before Him.",
+//       },
+//       {
+//         title: "Unity:",
+//         text: "We prioritize unity within worship ministry teams and the broader church community, recognizing that our collective worship is most powerful when we are united in purpose and spirit.",
+//       },
+//       {
+//         title: "Spiritual Formation:",
+//         text: "We are committed to fostering spiritual growth and maturity among participants, emphasizing the importance of personal devotion, prayer, and biblical study in worship leadership.",
+//       },
+//       {
+//         title: "Creativity:",
+//         text: "We embrace creativity as a means of expressing worship in diverse and innovative ways, honoring God with our artistic gifts and talents.",
+//       },
+//     ].map(({ title, text }, index) => (
+//       <div key={index} className="flex gap-4">
+//         <span className="text-lg font-bold hover:text-[#01715d]">{title}</span>
+//         <p className="text-sm">{text}</p>
+//       </div>
+//     ))}
+//   </div>
+// );
 
 export default About;

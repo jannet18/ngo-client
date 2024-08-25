@@ -46,20 +46,22 @@ function Header() {
   return (
     <>
       {/* Top Menu */}
-      <div className="bg-gray-100 px-6 py-4">
+      <div className="bg-gray-100 px-6 py-0">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
-            <Link to="/">
-              <img src={logo} alt="Entrust Logo" className="h-12 w-12" />
+            <Link to="/" className="text-2xl font-bold tracking-wider">
+              {/* <img src={logo} alt="Entrust Logo" className="h-12 w-12" /> */}
+              <h1>The Entrust</h1>
+              <span>Initiative</span>
             </Link>
             <div className="hidden sm:flex items-center space-x-4">
-              <Link
+              {/* <Link
                 to="https://airtable.com/appL0AY242tmDtUOP/pagIrvSEPt4LqpDkS/form"
                 className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#01715d] font-medium"
               >
                 <FaHeart className="w-4 h-4 text-[#fbd459]" />
                 Become a Volunteer
-              </Link>
+              </Link> */}
               <a
                 href="tel:+245722300000"
                 className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#01715d]"
@@ -159,9 +161,9 @@ function Header() {
               <Link to="/about" className="hover:text-gray-300">
                 About
               </Link>
-              <Link to="/donate" className="hover:text-gray-300">
+              {/* <Link to="/donate" className="hover:text-gray-300">
                 Donations
-              </Link>
+              </Link> */}
               <Link to="/events" className="hover:text-gray-300">
                 Events
               </Link>
@@ -216,8 +218,11 @@ function Header() {
                   </div>
                 )}
               </div>
-              <Link to="/contact" className="hover:text-gray-300">
+              {/* <Link to="/contact" className="hover:text-gray-300">
                 Contacts
+              </Link> */}
+              <Link to="" className="hover:text-gray-300">
+                Donations
               </Link>
             </div>
           </div>

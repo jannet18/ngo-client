@@ -44,9 +44,10 @@ function Hero() {
         <GrFormPrevious
           onClick={handlePrev}
           className="absolute w-8 h-8 top-50 cursor-pointer left-10 border p-2 rounded-full text-white hover:bg-white hover:text-[#fbd459]"
-          style={{ top: "50%", transform: "translateY(-50%)" }}
+          style={{ top: "90%", transform: "translateY(-50%)" }}
         />
       </button>
+
       <div className="w-full h-full">
         <img
           src={images[currentIndex].url}
@@ -59,10 +60,10 @@ function Hero() {
         <MdOutlineNavigateNext
           onClick={handleNext}
           className="absolute w-8 h-8 top-50 cursor-pointer right-10 border rounded-full text-white p-2 hover:bg-white hover:text-[#fbd459]"
-          style={{ top: "50%", transform: "translateY(-50%)" }}
+          style={{ top: "90%", transform: "translateY(-50%)" }}
         />
       </button>
-      <div className="absolute top-[7px] md:top-20 left-5 flex flex-col items-start space-y-3">
+      <div className="absolute top-[14px] md:top-20 left-5 flex flex-col items-start space-y-4">
         <h1 className="text-2xl font-bold text-[#fbd459]">
           Always support talent
         </h1>
