@@ -63,14 +63,17 @@ function Header() {
                 Become a Volunteer
               </Link> */}
               <a
-                href="tel:+245722300000"
+                href="tel:+254797432966"
                 className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#01715d]"
               >
                 <MdOutlinePhoneInTalk className="w-5 h-5 text-[#fbd459]" />
-                +245722300000
+                <div className="flex flex-col items-center">
+                  <span>+254797432966</span>
+                  <span>+254748149943</span>
+                </div>
               </a>
               <a
-                href="mailto:janetngei18@gmail.com"
+                href="mailto:theentrustinitiative@gmail.com"
                 className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#01715d]"
               >
                 <MdOutlineEmail className="w-5 h-5 text-[#fbd459]" />
@@ -221,7 +224,7 @@ function Header() {
               {/* <Link to="/contact" className="hover:text-gray-300">
                 Contacts
               </Link> */}
-              <Link to="" className="hover:text-gray-300">
+              <Link to="/donations" className="hover:text-gray-300">
                 Donations
               </Link>
             </div>

@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 import Cart from "./components/Cart";
 import Checkout from "./pages/Checkout";
 import MpesaPaymentForm from "./forms/MpesaPaymentForm";
+import Donations from "./pages/Donations";
 // import Dashboard from "./dashboard/Dashboard";
 // import Products from "./dashboard/Products";
 // import AddProduct from "./dashboard/AddProduct";
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/events" element={<Events />} />
         <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/donations" element={<Donations />} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/checkout" element={<Checkout />} />
         <Route exact path="/checkout" element={<Checkout />} />

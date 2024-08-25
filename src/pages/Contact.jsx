@@ -52,11 +52,15 @@ function Contact() {
           <div className="bg-white p-6 rounded-3xl space-y-4 mt-6">
             <a href="tel:" className="flex items-center gap-2">
               <FaPhoneVolume className="bg-[#fbd459] text-[#01715d] p-3 rounded-full hover:bg-[#0a4446] hover:text-white w-12 h-12" />
-              <span>+ 254 (722) - 0090</span>
+              <span>+254797432966</span>
+              <span>+254748149943</span>
             </a>
-            <a href="mailto:" className="flex items-center gap-2">
+            <a
+              href="mailto:theentrustinitiative@gmail.com"
+              className="flex items-center gap-2"
+            >
               <HiOutlineMailOpen className="bg-[#fbd459] text-[#01715d] p-3 rounded-full hover:bg-[#0a4446] hover:text-white w-12 h-12" />
-              <span>help@gmail.com</span>
+              <span>theentrustinitiative@gmail.com</span>
             </a>
             <a href="" className="flex items-center gap-2">
               <FaLocationDot className="bg-[#fbd459] text-[#01715d] p-3 rounded-full hover:bg-[#0a4446] hover:text-white w-12 h-12" />
