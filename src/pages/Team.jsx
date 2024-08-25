@@ -78,12 +78,12 @@ function Team() {
           ))}
         </div>
       </div>
-      <div className="relative">
+      {/* <div className="relative">
         <div className="relative">
           <img
             src="https://media.istockphoto.com/id/1434116950/vector/cartoon-people-with-hearts-romantic-persons-funny-guys-girls-and-kids-with-love-and-donate.jpg?s=612x612&w=0&k=20&c=V7a1zMCn1nQrStuQhfIO6Al6tO2dC-S11wK5JjYiDQg="
             alt=""
-            className="w-full h-full object-cover sm:w-[450px]"
+            className="w-full h-full object-cover sm:w-[500px]"
           />
           <div className="absolute inset-0 bg-green-900 bg-opacity-50"></div>
         </div>
@@ -97,6 +97,30 @@ function Team() {
           <Link
             to="/volunteer"
             className="bg-[#fbd459] text-xs font-bold p-5 rounded-full"
+          >
+            Discover More
+          </Link>
+        </div>
+      </div> */}
+      <div className="relative">
+        <div className="relative">
+          <img
+            src="https://media.istockphoto.com/id/1434116950/vector/cartoon-people-with-hearts-romantic-persons-funny-guys-girls-and-kids-with-love-and-donate.jpg?s=612x612&w=0&k=20&c=V7a1zMCn1nQrStuQhfIO6Al6tO2dC-S11wK5JjYiDQg="
+            alt=""
+            className="w-full h-full object-cover sm:w-[500px]"
+          />
+          <div className="absolute inset-0 bg-green-900 bg-opacity-50"></div>
+        </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center p-5">
+          <h2 className="font-bold text-[#fbd459] italic text-2xl sm:text-3xl">
+            Become a Volunteer
+          </h2>
+          <span className="text-2xl sm:text-4xl font-bold text-white">
+            Join your hand with us for a better life and future
+          </span>
+          <Link
+            to="/volunteer"
+            className="bg-[#fbd459] text-xs sm:text-sm font-bold p-3 sm:p-5 rounded-full"
           >
             Discover More
           </Link>
