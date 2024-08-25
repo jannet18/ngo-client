@@ -107,7 +107,7 @@ function Team() {
           <img
             src="https://media.istockphoto.com/id/1434116950/vector/cartoon-people-with-hearts-romantic-persons-funny-guys-girls-and-kids-with-love-and-donate.jpg?s=612x612&w=0&k=20&c=V7a1zMCn1nQrStuQhfIO6Al6tO2dC-S11wK5JjYiDQg="
             alt=""
-            className="w-full h-full object-cover sm:w-[500px]"
+            className="w-full h-full object-cover sm:w-fit"
           />
           <div className="absolute inset-0 bg-green-900 bg-opacity-50"></div>
         </div>
