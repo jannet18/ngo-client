@@ -44,9 +44,12 @@ function Footer() {
           <h4>Nairobi, Kenya</h4>
           <div className="flex items-center gap-2">
             <MdOutlinePhoneInTalk className="w-6 h-6 text-[#fbd459]" />
-            <span className="hover:text-[#fbd459] text-white text-sm">
-              +245791432966 / +25448149943
-            </span>
+            <a
+              href="tel:+25497432966"
+              className="hover:text-[#fbd459] text-white text-sm"
+            >
+              +245797432966 / +254748149943
+            </a>
           </div>
           <div className="flex items-center gap-2">
             <MdOutlineEmail className="w-6 h-6 text-[#fbd459] hover:text-[#01715d]" />
@@ -93,7 +96,13 @@ function Footer() {
           <FaLongArrowAltUp className="text-white w-6 h-6" />
         </div>
         <h2 className="text-sm">
-          &#169;All Copyright 2024 <span>|</span> <span>Developed by </span>
+          &#169;All Copyright 2024 <span>|</span>
+          <span className="ml-2">
+            Developed by
+            <a href="https://portfolio-f6uq.onrender.com/" className="ml-2">
+              Janet Ngei.
+            </a>
+          </span>
         </h2>
       </div>
     </div>

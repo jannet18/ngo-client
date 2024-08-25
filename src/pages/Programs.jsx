@@ -90,7 +90,7 @@ function Programs() {
               <img
                 src={program?.image_url}
                 alt={program.name}
-                className="object-cover w-full h-48 sm:h-64 lg:h-80"
+                className="object-cover w-full h-[100%]"
               />
               <div className="flex flex-col items-center justify-center gap-2 p-4 sm:p-6">
                 <h1 className="text-lg sm:text-xl font-bold text-center">
