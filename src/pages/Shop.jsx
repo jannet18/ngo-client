@@ -4,8 +4,13 @@ import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
 import { GoEye } from "react-icons/go";
 import Header from "../components/Header";
+import * as apiClient from "../apiClient";
+import { useQuery } from "react-query";
 
 function Shop() {
+  const { data } = useQuery("listings", apiClient?.fetchListings);
+  console.log(data);
+
   return (
     <>
       <Header />
@@ -42,249 +47,79 @@ function Shop() {
             </div>
             <div className="border rounded-3xl p-6 ">
               <h4 className="font-bold mb-2">Categories</h4>
-              <ul className="space-y-3">
-                <li className="text-gray-600 hover:bg-[#f9f4e8] p-2 rounded-3xl hover:font-bold">
-                  T-shirt
-                </li>
-                <li className="text-gray-600 hover:bg-[#f9f4e8] p-2 rounded-3xl hover:font-bold">
-                  Hoodie
-                </li>
-                <li className="text-gray-600 hover:bg-[#f9f4e8] p-2 rounded-3xl hover:font-bold">
-                  Mugs
-                </li>
-              </ul>
+              {data &&
+                data?.map((listing, index) => (
+                  <ul key={index} className="space-y-3 text-left">
+                    <li className="text-gray-600 hover:bg-[#f9f4e8] p-2 rounded-3xl hover:font-bold">
+                      {listing.name}
+                    </li>
+                  </ul>
+                ))}
             </div>
           </div>
           <div className="lg:col-span-3">
-            <div></div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {/* <div className="border rounded-3xl">
-                <div className="relative group w-full rounded-t-3xl overflow-hidden">
-                  <img
-                    src="https://media.istockphoto.com/id/1155855515/vector/vector-t-shirt-mockup-template-with-shadow-top-view.jpg?s=612x612&w=0&k=20&c=w7D-Fa9p85JgUxG2A01kgYL4RZxDqX89XzXwOkujEPY="
-                    className="w-full h-50 object-cover mb-4 "
-                    alt=""
-                  />
-                  <div className="flex items-start justify-end p-2 absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col gap-2">
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <FaRegHeart />
-                      </Link>
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <GoEye />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center gap-3 p-4">
-                  <h4 className="text-xl font-bold capitalize">T-shirt</h4>
-                  <span className="text-gray-500">Ksh. 600.00</span>
-                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
-                    Select options
-                  </Link>
-                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
-                    Add to Cart
-                  </Link>
-                </div>
-              </div>
-              <div className="border rounded-3xl">
-                <div className="relative group w-full rounded-t-3xl overflow-hidden">
-                  <img
-                    src="https://media.istockphoto.com/id/1155855515/vector/vector-t-shirt-mockup-template-with-shadow-top-view.jpg?s=612x612&w=0&k=20&c=w7D-Fa9p85JgUxG2A01kgYL4RZxDqX89XzXwOkujEPY="
-                    className="w-full h-50 object-cover mb-4 "
-                    alt=""
-                  />
-                  <div className="flex items-start justify-end p-2 absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col gap-2">
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <FaRegHeart />
-                      </Link>
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <GoEye />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center gap-3 p-4">
-                  <h4 className="text-xl font-bold capitalize">T-shirt</h4>
-                  <span className="text-gray-500">Ksh. 600.00</span>
-                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
-                    Select options
-                  </Link>
-                  <Link
-                    to="/cart"
-                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
-                  >
-                    Add to Cart
-                  </Link>
-                </div>
-              </div>
-              <div className="border rounded-3xl">
-                <div className="relative group w-full rounded-t-3xl overflow-hidden">
-                  <img
-                    src="https://media.istockphoto.com/id/1155855515/vector/vector-t-shirt-mockup-template-with-shadow-top-view.jpg?s=612x612&w=0&k=20&c=w7D-Fa9p85JgUxG2A01kgYL4RZxDqX89XzXwOkujEPY="
-                    className="w-full h-50 object-cover mb-4 "
-                    alt=""
-                  />
-                  <div className="flex items-start justify-end p-2 absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col gap-2">
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <FaRegHeart />
-                      </Link>
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <GoEye />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center gap-3 p-4">
-                  <h4 className="text-xl font-bold capitalize">T-shirt</h4>
-                  <span className="text-gray-500">Ksh. 600.00</span>
-                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
-                    Select options
-                  </Link>
-                  <Link
-                    to="/cart"
-                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
-                  >
-                    Add to Cart
-                  </Link>
-                </div>
-              </div>
-              <div className="border rounded-3xl">
-                <div className="relative group w-full rounded-t-3xl overflow-hidden">
-                  <img
-                    src="https://media.istockphoto.com/id/1155855515/vector/vector-t-shirt-mockup-template-with-shadow-top-view.jpg?s=612x612&w=0&k=20&c=w7D-Fa9p85JgUxG2A01kgYL4RZxDqX89XzXwOkujEPY="
-                    className="w-full h-50 object-cover mb-4 "
-                    alt=""
-                  />
-                  <div className="flex items-start justify-end p-2 absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col gap-2">
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <FaRegHeart />
-                      </Link>
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <GoEye />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center gap-3 p-4">
-                  <h4 className="text-xl font-bold capitalize">T-shirt</h4>
-                  <span className="text-gray-500">Ksh. 600.00</span>
-                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
-                    Select options
-                  </Link>
-                  <Link
-                    to="/cart"
-                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
-                  >
-                    Add to Cart
-                  </Link>
-                </div>
-              </div>
-              <div className="border rounded-3xl">
-                <div className="relative group w-full rounded-t-3xl overflow-hidden">
-                  <img
-                    src="https://media.istockphoto.com/id/1155855515/vector/vector-t-shirt-mockup-template-with-shadow-top-view.jpg?s=612x612&w=0&k=20&c=w7D-Fa9p85JgUxG2A01kgYL4RZxDqX89XzXwOkujEPY="
-                    className="w-full h-50 object-cover mb-4 "
-                    alt=""
-                  />
-                  <div className="flex items-start justify-end p-2 absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col gap-2">
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <FaRegHeart />
-                      </Link>
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <GoEye />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center gap-3 p-4">
-                  <h4 className="text-xl font-bold capitalize">T-shirt</h4>
-                  <span className="text-gray-500">Ksh. 600.00</span>
-                  <Link className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]">
-                    Select options
-                  </Link>
-                  <Link
-                    to="/cart"
-                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
-                  >
-                    Add to Cart
-                  </Link>
-                </div>
-              </div> */}
-              <div className="border rounded-3xl">
-                <div className="relative group w-full rounded-t-3xl overflow-hidden">
-                  <img
-                    src="https://media.istockphoto.com/id/1155855515/vector/vector-t-shirt-mockup-template-with-shadow-top-view.jpg?s=612x612&w=0&k=20&c=w7D-Fa9p85JgUxG2A01kgYL4RZxDqX89XzXwOkujEPY="
-                    className="w-full h-50 object-cover mb-4 "
-                    alt=""
-                  />
-                  <div className="flex items-start justify-end p-2 absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex flex-col gap-2">
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <FaRegHeart />
-                      </Link>
-                      <Link className="border  bg-white p-2 rounded-full">
-                        <GoEye />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center gap-3 p-4">
-                  <h4 className="text-xl font-bold capitalize">T-shirt</h4>
-                  <>
-                    <div className="prod-info grid gap-10">
-                      <div>
-                        <ul className="flex flex-row justify-center items-center">
-                          <li className="mr-4 last:mr-0">
-                            <span className="block p-1 border-2 border-gray-500 rounded-full transition ease-in duration-300">
-                              <a
-                                href="#blue"
-                                className="block w-6 h-6 bg-blue-900 rounded-full"
-                              ></a>
-                            </span>
-                          </li>
-                          <li className="mr-4 last:mr-0">
-                            <span className="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
-                              <a
-                                href="#yellow"
-                                className="block w-6 h-6 bg-yellow-500 rounded-full"
-                              ></a>
-                            </span>
-                          </li>
-                          <li className="mr-4 last:mr-0">
-                            <span className="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
-                              <a
-                                href="#red"
-                                className="block w-6 h-6 bg-red-500 rounded-full"
-                              ></a>
-                            </span>
-                          </li>
-                          <li className="mr-4 last:mr-0">
-                            <span className="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
-                              <a
-                                href="#green"
-                                className="block w-6 h-6 bg-green-500 rounded-full"
-                              ></a>
-                            </span>
-                          </li>
-                        </ul>
+              {data &&
+                data.map((listing) =>
+                  listing.products.map((product, id) => (
+                    <Link
+                      to="/product-details"
+                      key={id}
+                      className="border rounded-3xl"
+                    >
+                      <div className="relative group w-full rounded-t-3xl overflow-hidden">
+                        <img
+                          src={product.variants[0]?.image_url || ""}
+                          className="w-full h-50 object-cover mb-4 "
+                          alt={product.name}
+                        />
+                        <div className="flex items-start justify-end p-2 absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <div className="flex flex-col gap-2">
+                            <Link className="border  bg-white p-2 rounded-full">
+                              <FaRegHeart />
+                            </Link>
+                            <Link className="border  bg-white p-2 rounded-full">
+                              <GoEye />
+                            </Link>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </>
-                  <span className="text-gray-500">Ksh. 600.00</span>
-                  <Link
-                    to="/cart"
-                    className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
-                  >
-                    Add to Cart
-                  </Link>
-                </div>
-              </div>
-              <div className="border rounded-3xl">
+                      <div className="flex flex-col items-center gap-3 p-4">
+                        <h4 className="text-xl font-bold capitalize">
+                          {product.name}
+                        </h4>
+                        <div className="prod-info grid gap-10">
+                          <div>
+                            <ul className="flex flex-row justify-center items-center">
+                              {product.variants.map((variant, index) => (
+                                <li key={index} className="mr-4 last:mr-0">
+                                  <span className="block p-1 border-2 border-gray-500 rounded-full transition ease-in duration-300">
+                                    <a
+                                      href={`${variant?.color}`}
+                                      style={{
+                                        backgroundColor: variant.color,
+                                      }}
+                                      className="block w-6 h-6 rounded-full"
+                                    ></a>
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                        <span className="text-gray-500">{product.price}</span>
+                        <Link
+                          to="/cart"
+                          className="bg-[#f9f4e8] uppercase font-bold text-xs p-3 rounded-full hover:bg-[#fbd459]"
+                        >
+                          Add to Cart
+                        </Link>
+                      </div>
+                    </Link>
+                  ))
+                )}
+
+              {/* <div className="border rounded-3xl">
                 <div className="relative group w-full rounded-t-3xl overflow-hidden">
                   <img
                     src="https://media.istockphoto.com/id/1155855515/vector/vector-t-shirt-mockup-template-with-shadow-top-view.jpg?s=612x612&w=0&k=20&c=w7D-Fa9p85JgUxG2A01kgYL4RZxDqX89XzXwOkujEPY="
@@ -559,7 +394,7 @@ function Shop() {
                     Add to Cart
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

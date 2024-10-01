@@ -202,19 +202,20 @@ import Team from "./Team";
 
 function About() {
   return (
-    <div className="p-12 md:p-20 max-w-7xl mx-auto space-y-28">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 text-center md:text-left">
-        <div className="relative flex justify-center md:justify-end">
-          <div className="border-4 rounded-3xl p-20 w-[200px] h-[300px] md:w-[300px] md:h-[450px] border-[#fbd459]"></div>
+    <div className="p-12 md:p-20 max-w-7xl space-y-28 sm:mx-30">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 space-y-20 space-x-20 md:gap-32 text-center md:text-left"> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-32 text-center md:text-left p-8">
+        <div className="relative flex items-center md:justify-end">
+          <div className="border-4 rounded-3xl p-20 w-[300px] h-[300px] md:w-[350px] md:h-[400px] border-[#fbd459]"></div>
           <img
             src="https://media.istockphoto.com/id/1350203222/vector/different-hands-reach-out-to-the-heart-vector-concept-illustration-for-sharing-love-helping.jpg?s=612x612&w=0&k=20&c=XQDXWRLuCSdIK_vG4Dv0x4CS9Ao7_10SIwglxL8NqqA="
             alt="Hands reaching out to heart"
-            className="absolute top-[-15%] right-[70%] object-cover rounded-3xl w-[200px] h-[200px] md:w-[350px] md:h-[350px] z-10"
+            className="absolute md:top-[-10%] md:right-[25%] top-[-15%] right-[60%] object-cover rounded-3xl w-[250px] h-[250px] md:w-[300px] md:h-[300px] z-10 overflow-hidden"
           />
           <img
             src="https://media.istockphoto.com/id/1363108156/vector/love-and-compassion-hands.jpg?s=612x612&w=0&k=20&c=GoOIYkFWo_mCpcWRo58VBPrFmUZF9MlN2Bg3TMF1JC0="
             alt="Love and compassion hands"
-            className="absolute bottom-[-10%] left-[20%] object-cover rounded-3xl w-[200px] h-[200px] md:w-[350px] md:h-[350px] z-10"
+            className="absolute md:bottom-[-15%] md:left-[60%] bottom-[-15%] left-[40%] object-cover rounded-3xl w-[250px] h-[250px] md:w-[300px] md:h-[300px] z-10 "
           />
         </div>
         <div className="flex flex-col gap-6 p-6 border rounded-3xl h-fit">

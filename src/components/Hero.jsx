@@ -63,7 +63,7 @@ function Hero() {
           style={{ top: "90%", transform: "translateY(-50%)" }}
         />
       </button>
-      <div className="absolute top-[14px] md:top-20 left-5 flex flex-col items-start space-y-4">
+      <div className="absolute top-[15%] md:top-[10%] left-14 flex flex-col items-start space-y-4">
         <h1 className="text-2xl font-bold text-[#fbd459]">
           Always support talent
         </h1>

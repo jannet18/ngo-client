@@ -96,3 +96,11 @@ export const createProducts = async () => {
   }
   return response.json();
 };
+
+export const fetchListings = async () => {
+  const response = await fetch(`${API_BASE_URL}/listings`);
+  if (!response.ok) {
+    throw new Error("Fetch products failed");
+  }
+  return response.json();
+};
