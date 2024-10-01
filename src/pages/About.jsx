@@ -204,7 +204,7 @@ function About() {
   return (
     <div className="p-12 md:p-20 max-w-7xl space-y-28 sm:mx-30">
       {/* <div className="grid grid-cols-1 md:grid-cols-2 space-y-20 space-x-20 md:gap-32 text-center md:text-left"> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-32 text-center md:text-left p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-24 md:gap-x-40">
         <div className="relative flex items-center md:justify-end">
           <div className="border-4 rounded-3xl p-20 w-[300px] h-[300px] md:w-[350px] md:h-[400px] border-[#fbd459]"></div>
           <img
